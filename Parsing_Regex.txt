@@ -1,0 +1,31 @@
+//Derek Liemohn 4/8/19
+//Pulls data from CDS website
+
+
+data-js="site-panel__daypart-item-title"\s+>\s+([\w? ]{1,})\s
+    Pulls the names of all items on the CDS menu with only alphanumeric symbols in the name, 688 results
+
+<div class="site-panel__daypart-item-calories">\s+(\d+ cal.)
+    Pulls calorie count of all items on the CDS menu, 719 results
+
+data-js="site-panel__daypart-item-title"\s+>\s+([\w? ]{1,})\s+<span.+><.+span>\s+</button>\s+<div .+div>\s+</header>\s+<div class="site-panel__daypart-item-content">\s+<div class="site-panel__daypart-item-calories">\s+(\d+ cal.)
+    Doesn't work right now but should get a pair of name and calories for every item on the menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Out of Date    "label":"Calories","value":"(\d{1,})","unit":""
+                    Pulls calorie count of all items on the CDS menu, 538 results
+                "id":"\d{8}","label":"([\w+? ]{1,})"
+                    Pulls the names of all items on the CDS menu with only alphanumeric symbols in the name, 54 results
