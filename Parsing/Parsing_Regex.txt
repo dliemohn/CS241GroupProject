@@ -17,7 +17,16 @@ data-js="site-panel__daypart-item-title"\s+>\s+([\w? ]{1,})\s+<span.+><.+span>\s
 
 
 
-<h3 class="site-panel__daypart-station-title"> Name of the 
+<h3 class="site-panel__daypart-station-title"> Name of venue
+
+timing
+<span class="c-accordion__header-inner site-panel__cafeinfo-row-header-inner" data-depth="0" data-name="title" data-index="0" data-livetext="">
+<span class="c-accordion__header-inner site-panel__cafeinfo-row-header-inner" data-depth="0" data-name="title" data-index="1" data-livetext="">
+  Name of Venue
+<div class="site-panel__cafeinfo-daypart-name">
+  Name of Meal
+<div class="site-panel__cafeinfo-daypart-status">
+  Period Served
 
 
 
