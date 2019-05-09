@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'STVE' do
+  use_frameworks!
+
+  # Pods for STVE
+  pod 'hpple', '~> 0.2'
+
+
+end

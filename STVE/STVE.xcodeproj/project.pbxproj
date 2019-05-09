@@ -14,9 +14,11 @@
 		5EF3878522777001003CEB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3878422777001003CEB55 /* Assets.xcassets */; };
 		5EF3878822777001003CEB55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3878622777001003CEB55 /* LaunchScreen.storyboard */; };
 		5EF3879022777031003CEB55 /* MenuParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3878F22777031003CEB55 /* MenuParser.swift */; };
+		FD380DB2839FE7F28C6F4073 /* Pods_STVE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326E281AE427A9E90B61DED2 /* Pods_STVE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		326E281AE427A9E90B61DED2 /* Pods_STVE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STVE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF3877722776FFF003CEB55 /* STVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF3877A22776FFF003CEB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF3877C22776FFF003CEB55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		5EF3878722777001003CEB55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EF3878922777001003CEB55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EF3878F22777031003CEB55 /* MenuParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuParser.swift; sourceTree = "<group>"; };
+		B0C4E047A953875D1CF9FFCF /* Pods-STVE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STVE.debug.xcconfig"; path = "Target Support Files/Pods-STVE/Pods-STVE.debug.xcconfig"; sourceTree = "<group>"; };
+		E47D5E82987069D3ABA4783B /* Pods-STVE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STVE.release.xcconfig"; path = "Target Support Files/Pods-STVE/Pods-STVE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD380DB2839FE7F28C6F4073 /* Pods_STVE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				5EF3877922776FFF003CEB55 /* STVE */,
 				5EF3877822776FFF003CEB55 /* Products */,
+				BA9914C065566EAE75C3DF88 /* Pods */,
+				C0CF0DF4F2FD6E2D902B7A28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = STVE;
 			sourceTree = "<group>";
 		};
+		BA9914C065566EAE75C3DF88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0C4E047A953875D1CF9FFCF /* Pods-STVE.debug.xcconfig */,
+				E47D5E82987069D3ABA4783B /* Pods-STVE.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C0CF0DF4F2FD6E2D902B7A28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				326E281AE427A9E90B61DED2 /* Pods_STVE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EF3878C22777001003CEB55 /* Build configuration list for PBXNativeTarget "STVE" */;
 			buildPhases = (
+				BA35083ACC45119EB112B6E1 /* [CP] Check Pods Manifest.lock */,
 				5EF3877322776FFF003CEB55 /* Sources */,
 				5EF3877422776FFF003CEB55 /* Frameworks */,
 				5EF3877522776FFF003CEB55 /* Resources */,
+				959AAC7F80B1719F83584183 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		959AAC7F80B1719F83584183 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-STVE/Pods-STVE-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/hpple/hpple.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hpple.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STVE/Pods-STVE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA35083ACC45119EB112B6E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-STVE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5EF3877322776FFF003CEB55 /* Sources */ = {
@@ -288,6 +362,7 @@
 		};
 		5EF3878D22777001003CEB55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C4E047A953875D1CF9FFCF /* Pods-STVE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,6 +380,7 @@
 		};
 		5EF3878E22777001003CEB55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47D5E82987069D3ABA4783B /* Pods-STVE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
