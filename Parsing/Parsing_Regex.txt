@@ -30,6 +30,8 @@ timing
 <div class="site-panel__cafeinfo-daypart-status">
   Period Served
 
+Time parsing regex
+(\d:\d\d [ap]m)
 
 
 

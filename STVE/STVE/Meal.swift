@@ -10,5 +10,4 @@ class Meal {
   var endTime: String;
   var venue: Venue;
   var items: String[];
-
 }
