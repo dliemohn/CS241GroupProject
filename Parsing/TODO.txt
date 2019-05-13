@@ -1,3 +1,1 @@
-Find HTML tags with:
-	Times, meals, venues and items
-	
+

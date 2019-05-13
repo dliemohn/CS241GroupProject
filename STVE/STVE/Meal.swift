@@ -6,8 +6,8 @@
 
 
 class Meal {
-  var startTime: String;
-  var endTime: String;
+  var startTime: NSString;
+  var endTime: NSString;
   var venue: Venue;
-  var items: String[];
+  var items: [NSString];
 }

@@ -2,47 +2,28 @@
 //Pulls data from CDS website
 //match count based on Sample_Day file, the Full Service Menu from 4/9/19
 
-
-data-js="site-panel__daypart-item-title"\s+>\s+([\w? ]{1,})\s
-    Pulls the names of all items on the CDS menu with only alphanumeric symbols in the name, 689 matches
-data-js="site-panel__daypart-item-title"\s+>\s+([\w.? ?'?%?-?]{1,})\s
-    Same as above but pulls more stuff with special characters 710 matches
-
-
-\s+(\d+ cal.)
-    Pulls calorie count of all items on the CDS menu, 721 matches
-
-data-js="site-panel__daypart-item-title"\s+>\s+([\w? ]{1,})\s+<span.+><.+span>\s+</button>\s+<div .+div>\s+</header>\s+<div class="site-panel__daypart-item-content">\s+<div class="site-panel__daypart-item-calories">\s+(\d+ cal.)
-    Doesn't work right now but should get a pair of name and calories for every item on the menu
-
-
-
-<h3 class="site-panel__daypart-station-title"> Name of venue
-<h2 class="daypart-modal__title" id="daypart-modal_title--4">hot breakfast</h2>
-<div class="site-panel__daypart-item-calories"> Calorie count
-
-timing
+All-Cafe Site parsing //Takes the data for every cafe and creates venue and meal classes
+Venue Page HTML
+<a href="https://oberlin.cafebonappetit.com/cafe/stevenson-cafe/" class="site-panel__cafenav-itemlink" data-js="site-panel__cafenav-itemlink">
+										Stevenson Cafe
+										</a>
+Name of Venue
 <span class="c-accordion__header-inner site-panel__cafeinfo-row-header-inner" data-depth="0" data-name="title" data-index="0" data-livetext="">
-<span class="c-accordion__header-inner site-panel__cafeinfo-row-header-inner" data-depth="0" data-name="title" data-index="1" data-livetext="">
-  Name of Venue
+Name of Meal
 <div class="site-panel__cafeinfo-daypart-name">
-  Name of Meal
+Serving Time
 <div class="site-panel__cafeinfo-daypart-status">
-  Period Served
 
-Time parsing regex
+Time parsing regex - Start time is first captured group, close time is second
 (\d:\d\d [ap]m)
 
+Individual Cafe Parsing
 
-
-
-
-Fair-trade Coffee
-
-
-
-
-Out of Date    "label":"Calories","value":"(\d{1,})","unit":""
-                    Pulls calorie count of all items on the CDS menu, 538 results
-                "id":"\d{8}","label":"([\w+? ]{1,})"
-                    Pulls the names of all items on the CDS menu with only alphanumeric symbols in the name, 54 results
+Meal Name
+<h2 class="panel__title site-panel__daypart-panel-title ">
+Meal Time
+<div class="site-panel__daypart-time">
+Item Name
+<button class="h4 site-panel__daypart-item-title" aria-label="More info about ham, cage-free egg and cheese scramble" data-id="12639979" data-js="site-panel__daypart-item-title">
+Item Calories (Optional)
+<div class="site-panel__daypart-item-calories">
