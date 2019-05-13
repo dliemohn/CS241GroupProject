@@ -5,7 +5,6 @@ target 'STVE' do
   use_frameworks!
 
   # Pods for STVE
-  pod 'hpple', '~> 0.2'
-
+  pod 'Kanna', '~> 4.0.0'
 
 end

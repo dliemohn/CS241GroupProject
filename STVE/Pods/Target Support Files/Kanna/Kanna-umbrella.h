@@ -10,10 +10,8 @@
 #endif
 #endif
 
-#import "TFHpple.h"
-#import "TFHppleElement.h"
-#import "XPathQuery.h"
+#import "Kanna.h"
 
-FOUNDATION_EXPORT double hppleVersionNumber;
-FOUNDATION_EXPORT const unsigned char hppleVersionString[];
+FOUNDATION_EXPORT double KannaVersionNumber;
+FOUNDATION_EXPORT const unsigned char KannaVersionString[];
 

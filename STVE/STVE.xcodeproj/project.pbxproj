@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5ED705E92289F64D00D90393 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED705E82289F64D00D90393 /* Venue.swift */; };
 		5EF3877B22776FFF003CEB55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3877A22776FFF003CEB55 /* AppDelegate.swift */; };
 		5EF3877D22776FFF003CEB55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3877C22776FFF003CEB55 /* ViewController.swift */; };
 		5EF3878022776FFF003CEB55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3877E22776FFF003CEB55 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		326E281AE427A9E90B61DED2 /* Pods_STVE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STVE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED705E82289F64D00D90393 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		5EF3877722776FFF003CEB55 /* STVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF3877A22776FFF003CEB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF3877C22776FFF003CEB55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +29,7 @@
 		5EF3878422777001003CEB55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EF3878722777001003CEB55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EF3878922777001003CEB55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EF3878F22777031003CEB55 /* MenuParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuParser.swift; sourceTree = "<group>"; };
+		5EF3878F22777031003CEB55 /* MenuParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuParser.swift; sourceTree = "<group>"; usesTabs = 1; };
 		B0C4E047A953875D1CF9FFCF /* Pods-STVE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STVE.debug.xcconfig"; path = "Target Support Files/Pods-STVE/Pods-STVE.debug.xcconfig"; sourceTree = "<group>"; };
 		E47D5E82987069D3ABA4783B /* Pods-STVE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STVE.release.xcconfig"; path = "Target Support Files/Pods-STVE/Pods-STVE.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 		5EF3877922776FFF003CEB55 /* STVE */ = {
 			isa = PBXGroup;
 			children = (
+				5ED705E82289F64D00D90393 /* Venue.swift */,
 				5EF3877A22776FFF003CEB55 /* AppDelegate.swift */,
 				5EF3877C22776FFF003CEB55 /* ViewController.swift */,
 				5EF3877E22776FFF003CEB55 /* Main.storyboard */,
@@ -83,7 +86,6 @@
 				B0C4E047A953875D1CF9FFCF /* Pods-STVE.debug.xcconfig */,
 				E47D5E82987069D3ABA4783B /* Pods-STVE.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -173,13 +175,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-STVE/Pods-STVE-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/hpple/hpple.framework",
+				"${BUILT_PRODUCTS_DIR}/Kanna/Kanna.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hpple.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kanna.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -216,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EF3877D22776FFF003CEB55 /* ViewController.swift in Sources */,
+				5ED705E92289F64D00D90393 /* Venue.swift in Sources */,
 				5EF3879022777031003CEB55 /* MenuParser.swift in Sources */,
 				5EF3878322776FFF003CEB55 /* STVE.xcdatamodeld in Sources */,
 				5EF3877B22776FFF003CEB55 /* AppDelegate.swift in Sources */,
@@ -384,6 +387,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[sdk=iphoneos12.2]" = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/hpple/hpple.framework/Headers\"",
+					"$(SDKROOT)/usr/include/libxml2",
+					"\"$(SRCROOT)/Pods/Pods.xcodeproj\"/**",
+				);
 				INFOPLIST_FILE = STVE/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
