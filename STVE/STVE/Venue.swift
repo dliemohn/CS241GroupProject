@@ -9,7 +9,7 @@ import Kanna
 class Venue {
 	let meals: [Menu]
 	var name: String
-	
+
 	public init(metaHTML: XMLElement) throws {
 		//let metadata = try HTML(html: metaHTML, encoding: .utf8)
 		guard let span =  metaHTML.xpath("//span@[data-name='title']").first else {
@@ -27,7 +27,7 @@ class Venue {
 		}
 		try getMenus(url: menuRL)
 	}
-	
+
 	func getMenus(url: String) throws -> Void {
 		let doc = try getHTML(from: url)
 		for meal in doc.xpath("//header@[class's-header site-panel__daypart-header']") {
