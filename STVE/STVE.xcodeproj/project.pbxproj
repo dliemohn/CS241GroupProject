@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EBE9FAE228B80100033CFCC /* DiningHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE9FAB228B80100033CFCC /* DiningHallViewController.swift */; };
+		5EBE9FAF228B80100033CFCC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE9FAC228B80100033CFCC /* HomeViewController.swift */; };
+		5EBE9FB0228B80100033CFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE9FAD228B80100033CFCC /* AppDelegate.swift */; };
 		5ED705E92289F64D00D90393 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED705E82289F64D00D90393 /* Venue.swift */; };
+		5ED705EB228A14C400D90393 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED705EA228A14C400D90393 /* Meal.swift */; };
 		5EF3877B22776FFF003CEB55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3877A22776FFF003CEB55 /* AppDelegate.swift */; };
 		5EF3877D22776FFF003CEB55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3877C22776FFF003CEB55 /* ViewController.swift */; };
 		5EF3878022776FFF003CEB55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3877E22776FFF003CEB55 /* Main.storyboard */; };
@@ -20,7 +24,11 @@
 
 /* Begin PBXFileReference section */
 		326E281AE427A9E90B61DED2 /* Pods_STVE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STVE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EBE9FAB228B80100033CFCC /* DiningHallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningHallViewController.swift; sourceTree = "<group>"; };
+		5EBE9FAC228B80100033CFCC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5EBE9FAD228B80100033CFCC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../../../../../Downloads/AppDelegate.swift; sourceTree = "<group>"; };
 		5ED705E82289F64D00D90393 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; usesTabs = 1; };
+		5ED705EA228A14C400D90393 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EF3877722776FFF003CEB55 /* STVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF3877A22776FFF003CEB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF3877C22776FFF003CEB55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +75,11 @@
 		5EF3877922776FFF003CEB55 /* STVE */ = {
 			isa = PBXGroup;
 			children = (
+				5EBE9FAD228B80100033CFCC /* AppDelegate.swift */,
+				5EBE9FAB228B80100033CFCC /* DiningHallViewController.swift */,
+				5EBE9FAC228B80100033CFCC /* HomeViewController.swift */,
 				5ED705E82289F64D00D90393 /* Venue.swift */,
+				5ED705EA228A14C400D90393 /* Meal.swift */,
 				5EF3877A22776FFF003CEB55 /* AppDelegate.swift */,
 				5EF3877C22776FFF003CEB55 /* ViewController.swift */,
 				5EF3877E22776FFF003CEB55 /* Main.storyboard */,
@@ -217,10 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EBE9FAE228B80100033CFCC /* DiningHallViewController.swift in Sources */,
 				5EF3877D22776FFF003CEB55 /* ViewController.swift in Sources */,
 				5ED705E92289F64D00D90393 /* Venue.swift in Sources */,
+				5EBE9FB0228B80100033CFCC /* AppDelegate.swift in Sources */,
+				5EBE9FAF228B80100033CFCC /* HomeViewController.swift in Sources */,
 				5EF3879022777031003CEB55 /* MenuParser.swift in Sources */,
 				5EF3878322776FFF003CEB55 /* STVE.xcdatamodeld in Sources */,
+				5ED705EB228A14C400D90393 /* Meal.swift in Sources */,
 				5EF3877B22776FFF003CEB55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
