@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		326E281AE427A9E90B61DED2 /* Pods_STVE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STVE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ED705E82289F64D00D90393 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		5ED705E82289F64D00D90393 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EF3877722776FFF003CEB55 /* STVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF3877A22776FFF003CEB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EF3877C22776FFF003CEB55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
