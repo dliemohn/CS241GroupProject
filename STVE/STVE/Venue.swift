@@ -5,6 +5,6 @@
 //
 
 class Venue {
-   var meals: Meal [];
-    
+   var meals: [Meal];
+
 }
