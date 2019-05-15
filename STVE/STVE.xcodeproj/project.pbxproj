@@ -10,10 +10,10 @@
 		5EBE9FAE228B80100033CFCC /* DiningHallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE9FAB228B80100033CFCC /* DiningHallViewController.swift */; };
 		5EBE9FAF228B80100033CFCC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE9FAC228B80100033CFCC /* HomeViewController.swift */; };
 		5EBE9FB0228B80100033CFCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE9FAD228B80100033CFCC /* AppDelegate.swift */; };
+		5EBE9FB2228B85F50033CFCC /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE9FB1228B85F50033CFCC /* MenuItem.swift */; };
 		5ED705E92289F64D00D90393 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED705E82289F64D00D90393 /* Venue.swift */; };
 		5ED705EB228A14C400D90393 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED705EA228A14C400D90393 /* Meal.swift */; };
 		5EF3877B22776FFF003CEB55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3877A22776FFF003CEB55 /* AppDelegate.swift */; };
-		5EF3877D22776FFF003CEB55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3877C22776FFF003CEB55 /* ViewController.swift */; };
 		5EF3878022776FFF003CEB55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3877E22776FFF003CEB55 /* Main.storyboard */; };
 		5EF3878322776FFF003CEB55 /* STVE.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5EF3878122776FFF003CEB55 /* STVE.xcdatamodeld */; };
 		5EF3878522777001003CEB55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EF3878422777001003CEB55 /* Assets.xcassets */; };
@@ -27,11 +27,11 @@
 		5EBE9FAB228B80100033CFCC /* DiningHallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningHallViewController.swift; sourceTree = "<group>"; };
 		5EBE9FAC228B80100033CFCC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5EBE9FAD228B80100033CFCC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../../../../../Downloads/AppDelegate.swift; sourceTree = "<group>"; };
+		5EBE9FB1228B85F50033CFCC /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		5ED705E82289F64D00D90393 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5ED705EA228A14C400D90393 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; usesTabs = 1; };
 		5EF3877722776FFF003CEB55 /* STVE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STVE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF3877A22776FFF003CEB55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5EF3877C22776FFF003CEB55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5EF3877F22776FFF003CEB55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EF3878222776FFF003CEB55 /* STVE.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = STVE.xcdatamodel; sourceTree = "<group>"; };
 		5EF3878422777001003CEB55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 				5EBE9FAC228B80100033CFCC /* HomeViewController.swift */,
 				5ED705E82289F64D00D90393 /* Venue.swift */,
 				5ED705EA228A14C400D90393 /* Meal.swift */,
+				5EBE9FB1228B85F50033CFCC /* MenuItem.swift */,
 				5EF3877A22776FFF003CEB55 /* AppDelegate.swift */,
-				5EF3877C22776FFF003CEB55 /* ViewController.swift */,
 				5EF3877E22776FFF003CEB55 /* Main.storyboard */,
 				5EF3878422777001003CEB55 /* Assets.xcassets */,
 				5EF3878622777001003CEB55 /* LaunchScreen.storyboard */,
@@ -230,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EBE9FAE228B80100033CFCC /* DiningHallViewController.swift in Sources */,
-				5EF3877D22776FFF003CEB55 /* ViewController.swift in Sources */,
 				5ED705E92289F64D00D90393 /* Venue.swift in Sources */,
 				5EBE9FB0228B80100033CFCC /* AppDelegate.swift in Sources */,
 				5EBE9FAF228B80100033CFCC /* HomeViewController.swift in Sources */,
@@ -238,6 +237,7 @@
 				5EF3878322776FFF003CEB55 /* STVE.xcdatamodeld in Sources */,
 				5ED705EB228A14C400D90393 /* Meal.swift in Sources */,
 				5EF3877B22776FFF003CEB55 /* AppDelegate.swift in Sources */,
+				5EBE9FB2228B85F50033CFCC /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +320,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -374,6 +375,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -392,6 +394,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = oc.cs241.STVE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -416,6 +419,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = oc.cs241.STVE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
