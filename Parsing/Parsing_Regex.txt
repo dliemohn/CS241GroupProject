@@ -27,3 +27,6 @@ Item Name
 <button class="h4 site-panel__daypart-item-title" aria-label="More info about ham, cage-free egg and cheese scramble" data-id="12639979" data-js="site-panel__daypart-item-title">
 Item Calories (Optional)
 <div class="site-panel__daypart-item-calories">
+
+Remove HTML comments
+<!--.*-->
