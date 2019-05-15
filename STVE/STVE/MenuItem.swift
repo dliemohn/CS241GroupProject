@@ -9,7 +9,7 @@
 import Foundation
 import Kanna
 
-class {
+class MenuItem {
     var dishName: String
     var sides: String
     var description: String
@@ -24,24 +24,30 @@ class {
         }
         dishName = name;
         sides = ""
-        guard let daypart_sides = html.xpath("//div@[class='site-panel__daypart-item-sides']").first {
-            guard let sides_text = daypart_sides.text {
-                sides = sides_text
-            }
+        guard let daypart_sides = html.xpath("//div@[class='site-panel__daypart-item-sides']").first else {
+            throw ParsingError.HTMLError
         }
-         cals = ""
-        guard let desc_obj = html.xpath("//div@['site-panel__daypart-item-description']").first {
-            guard let desc_text = desc_obj.innerHTML {
-                desc_text.replacingOccurrences(of: "<br>", with: "\n")
-                desc_text.replacingOccurrences(of: "<!--Outputting Options-->", with: "")
-                description = desc_text
-            }
+        guard let sides_text = daypart_sides.text else {
+            throw ParsingError.HTMLError
         }
+        sides = sides_text
         cals = ""
-        guard let calinfo = html.xpath("//div@[class='site-panel__daypart-item-calories']").first {
-            guard let caltext = calinfo.text {
-                cals = caltext
-            }
+        guard let desc_obj = html.xpath("//div@['site-panel__daypart-item-description']").first else {
+            throw ParsingError.HTMLError
         }
+        guard let desc_text = desc_obj.innerHTML else {
+           
+        }
+        desc_text.replacingOccurrences(of: "<br>", with: "\n")
+        desc_text.replacingOccurrences(of: "<!--Outputting Options-->", with: "")
+        description = desc_text
+        cals = ""
+        guard let calinfo = html.xpath("//div@[class='site-panel__daypart-item-calories']").first else {
+            throw ParsingError.HTMLError
+        }
+        guard let caltext = calinfo.text else {
+            throw ParsingError.HTMLError
+        }
+        cals = caltext
     }
 }
